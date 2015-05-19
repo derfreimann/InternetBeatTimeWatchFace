@@ -35,6 +35,12 @@ public class InternetBeatTimeWatchFaceService extends CanvasWatchFaceService {
     private static final long TICK_PERIOD_MILLIS = TimeUnit.SECONDS.toMillis(1);
     private PowerManager.WakeLock wakeLock;
     private static final String TAG = "BEATS_SWATCH_FACE_DEBUG";
+ 
+    /* moved from COMMONS */
+    public static final String PATH = "/simple_watch_face_config";
+    public static final String KEY_BACKGROUND_COLOUR = "KEY_BACKGROUND_COLOUR";
+    public static final String KEY_DATE_TIME_COLOUR = "KEY_DATE_TIME_COLOUR";
+
 
     @Override
     public Engine onCreateEngine() {
